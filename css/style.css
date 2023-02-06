@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Poppins&family=Source+Serif+Pro:wght@300&display=swap');
+
+body{
+    background-color: #212121;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 4fr 0.2fr;
+    gap: 10px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "navbar"
+      "main"
+      "footer";
+    align-content: stretch;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar{
+    grid-area: navbar;
+    background: #212121;
+}
+
+.logo{
+    width: 15%;
+    height: 15%;
+    opacity: 0.9;
+}
+
+.logo:hover{
+    opacity: 0.6;
+}
+
+nav{
+    display: flex;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Aboreto', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    color: #F7F7F7;
+}
+
+nav ul li a:hover{
+    color: #ff0000;
+}
+
+.imgcenter{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.main{ 
+    grid-area: main;
+}
+
+.main p{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 300;
+    color: #F7F7F7;
+    font-size: 16px;
+}
+
+.body{
+    grid-area: main;
+    display:grid;
+    background-color: #FFF;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+.btn{
+    border: 1px solid #f7f7f77c;
+    background: #212121;
+    color: #F7F7F7;
+    padding: 3% 4%;
+    font-family: 'Source Serif Pro', serif;
+    display: inline-block;
+}
+
+.btn:hover{
+    color: red;
+}
+
+.main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+
+.main h1{
+    font-family: 'Aboreto', cursive;
+    font-size: 30px;
+    text-align: center;
+    color:#F7F7F7;
+}
+
+.footer {
+    grid-area: footer;
+    display: inline-block;
+    background-color: #212121;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+.footer a{
+    color: #F7F7F7;
+    font-family: 'Aboreto', cursive;
+    font-size: 14px;
+}
+
+.footer img{
+    padding: 5px;
+}
+
+.footer p{
+    color: #f7f7f77c;
+    font-family: 'Aboreto', cursive;
+    font-size: 10px;
+}
