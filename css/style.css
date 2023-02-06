@@ -137,6 +137,9 @@ nav ul li a:hover{
 .footer img{
     padding: 5px;
 }
+.footer img:hover{
+    opacity: 0.6;
+}
 
 .footer p{
     color: #f7f7f77c;
