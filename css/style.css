@@ -96,7 +96,7 @@ nav ul li a:hover{
 
 .main .bgimg{
     position: absolute;
-    background: #212121 url(../img/main-image.jpg);
+    background: #212121 url(./../img/main-image.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -107,7 +107,7 @@ nav ul li a:hover{
 
 .main .abtimg{
     position: absolute;
-    background: #212121 url(../img/about-img.jpg);
+    background: #212121 url(./../img/about-img.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
